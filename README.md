@@ -1,4 +1,4 @@
-# Doxcise.AI
+#🧠 Doxcise.AI
 
 **Doxcise.AI** is a SaaS-ready AI platform for generating professional, structured documents with ease. It features smart templates, secure Clerk authentication, personalized history tracking, and Stripe-powered payments — all in a sleek, scalable UI.
 
