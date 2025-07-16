@@ -4,7 +4,7 @@
 
 ## 📽️ Preview
 
-![Preview_gif](./preview.gif)
+![Preview.gif](./Preview.gif)
 ---
 ---
 
