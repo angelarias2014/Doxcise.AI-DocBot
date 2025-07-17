@@ -1,13 +1,17 @@
-import { SignIn } from "@clerk/nextjs";
-import React from "react";
+import React from "react"
+import { SignIn } from "@clerk/nextjs"
 
 export default function SignInPage() {
+
   return (
+
     <div className="h-screen bg-[#0f172a] bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-black flex items-center justify-center px-4 py-4 overflow-hidden">
       <div className="w-full max-w-5xl h-full max-h-[calc(100vh-2rem)] grid grid-cols-1 lg:grid-cols-2 bg-white/5 border border-white/10 backdrop-blur-lg shadow-2xl rounded-3xl overflow-hidden">
 
-        {/* 🚀 Left Side - Informational Panel */}
+        {/* Left Side - Informational Panel */}
+
         <div className="hidden lg:flex flex-col justify-between p-8 bg-gradient-to-br from-cyan-700 via-blue-800 to-blue-900 text-white relative overflow-hidden">
+
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-400/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div>
@@ -49,12 +53,13 @@ export default function SignInPage() {
           </div>
         </div>
 
-        {/* 🧾 SignIn Form */}
+        {/* Right Sode - SignIn Form */}
+
         <div className="p-6 sm:p-8 bg-black/40 text-white flex flex-col justify-center relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-transparent via-blue-900/5 to-cyan-900/10"></div>
 
           <div className="relative z-10">
-        <div className="mb-6 text-center">
+            <div className="mb-6 text-center">
               <div className="inline-flex items-center justify-center w-32 h-12  mb-4 shadow-lg">
                 <img src="/logo.svg" alt="Genify Logo" className="h-14 w-26" />
               </div>
@@ -105,5 +110,5 @@ export default function SignInPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }
