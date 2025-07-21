@@ -1,30 +1,40 @@
 "use client"
 
 import Image from "next/image"
-import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
+import { useState, useEffect } from "react"
 import { usePathname, useRouter } from "next/navigation"
 import { SignInButton, SignUpButton, UserButton, useUser } from "@clerk/nextjs"
-import UsageTrack from "../(components)/UsageTrack" // Adjust if needed
 
+import UsageTrack from "../(components)/UsageTrack" 
+
+
+//  Navigation links for both desktop and mobile
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "History", href: "/history" },
   { label: "Pricing", href: "/pricing" },
-  { label: "How It Works", href: "#how-it-works" },
+  { label: "How It Works", href: "#how-it-works" }
 ]
 
 const Header: React.FC = () => {
+
   const router = useRouter()
   const pathname = usePathname()
+
   const { isSignedIn } = useUser()
+
   const [showMenu, setShowMenu] = useState(false)
   const [activeLink, setActiveLink] = useState<string>(pathname)
 
+
+  // Update active link on route change.
   useEffect(() => {
     setActiveLink(pathname)
   }, [pathname])
 
+
+  // Handles link click.
   const handleNavClick = (href: string) => {
     if (href.startsWith("#")) {
       const element = document.querySelector(href)
@@ -39,6 +49,7 @@ const Header: React.FC = () => {
   }
 
   return (
+
     <nav className="w-full z-50 sticky top-0 bg-transparent">
       <div className="max-w-7xl mx-auto mt-4 px-6 py-3 bg-blue-500/30 backdrop-blur-xl border border-cyan-500 rounded-xl shadow-lg flex items-center justify-between">
 

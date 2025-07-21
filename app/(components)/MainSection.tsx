@@ -1,10 +1,11 @@
 "use client"
 
-import HeroSection from './HeroSection'
-import templates from '../(data)/template'
 import { useRouter } from 'next/navigation'
 import React, { useState, useRef } from 'react'
 import { Search, Sparkles, ChevronRight } from 'lucide-react'
+
+import HeroSection from './HeroSection'
+import templates from '../(data)/template'
 
 function MainSection() {
 

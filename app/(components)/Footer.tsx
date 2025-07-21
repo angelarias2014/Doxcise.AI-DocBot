@@ -4,7 +4,9 @@ import React from "react"
 import { Github, Linkedin, Mail, Heart } from "lucide-react"
 
 const FooterSection = () => {
+
   return (
+
     <footer className="bg-gradient-to-b from-cyan-900 via-cyan-950 to-black text-white px-6 py-16 overflow-hidden ">
 
       {/* Floating subtle background elements */}
@@ -17,7 +19,6 @@ const FooterSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         
-        {/* Logo & Tagline */}
         <h1 className="text-3xl sm:text-4xl font-extrabold text-cyan-300 mb-3 tracking-tight">
           Doxcise.<span className="text-white">AI</span>
         </h1>

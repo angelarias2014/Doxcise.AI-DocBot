@@ -116,7 +116,7 @@ const HistoryPage = async () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default HistoryPage;
+export default HistoryPage

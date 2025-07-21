@@ -1,6 +1,7 @@
 import React from 'react'
 import { Rocket, Brain, Target, CircleArrowDown } from 'lucide-react'
 
+
 function HeroSection() {
 
     const scrollToTools = () => {

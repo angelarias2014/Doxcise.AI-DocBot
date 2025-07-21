@@ -35,7 +35,7 @@ const HowItWorksSection = () => {
       {/* Horizontal Stroke */}
       <div className="w-full border-t border-cyan-200" />
 
-      {/* Section */}
+      {/* Main Section */}
       <section id="how-it-works" className="py-20 bg-white relative z-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">

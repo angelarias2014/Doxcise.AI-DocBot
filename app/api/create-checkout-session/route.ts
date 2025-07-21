@@ -1,5 +1,3 @@
-// /app/api/create-checkout-session/route.ts
-
 import Stripe from 'stripe'
 import { NextResponse } from 'next/server'
 
@@ -17,12 +15,12 @@ export async function POST() {
             product_data: {
               name: 'Pro Plan',
             },
-            unit_amount: 5000, // $50.00
+            unit_amount: 5000,
           },
           quantity: 1,
         },
       ],
-      success_url: 'http://localhost:3000/success', // ✅ Use absolute URLs
+      success_url: 'http://localhost:3000/success',
       cancel_url: 'http://localhost:3000/cancel',
     })
 

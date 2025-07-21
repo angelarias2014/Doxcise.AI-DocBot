@@ -7,7 +7,6 @@ import templates from "@/app/(data)/template";
 import SlugHeader from "@/app/(components)/SlugHeader";
 import { useUser } from "@clerk/nextjs";
 
-// Dynamic import for Viewer (disable SSR)
 const OutputEditor = dynamic(() => import("@/app/(components)/OutputEditor"), {
   ssr: false,
 });
