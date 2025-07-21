@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "vercel-build": "npm install --legacy-peer-deps && next build",
     "build": "next build",
+    "dev": "next dev --turbopack",
     "start": "next start",
     "lint": "next lint",
-    "db:push": "drizzle-kit push",
-    "vercel-build": "npm install --legacy-peer-deps && next build"
-
+    "db:push": "drizzle-kit push"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.24.0",
