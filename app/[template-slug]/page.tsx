@@ -3,13 +3,11 @@
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
-import templates from "@/app/(data)/template";
-import SlugHeader from "@/app/(components)/SlugHeader";
+import templates from "../(data)/template";
+import SlugHeader from "../(components)/SlugHeader";
 import { useUser } from "@clerk/nextjs";
 
-const OutputEditor = dynamic(() => import("@/app/(components)/OutputEditor"), {
-  ssr: false,
-});
+const OutputEditor = dynamic(() => import("../(components)/OutputEditor"), { ssr: false });
 
 const SlugPage = () => {
 
